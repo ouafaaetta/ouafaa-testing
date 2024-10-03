@@ -9,20 +9,15 @@ title: working example of a content page with tabbed interface
   <li>Create a content page with a tabbed interface</code></li>
   <li>re-creating the issue locally with a working example using generic content and existing GCWeb and WET-BOEW examples. </li>
 </ul>
-<h2 id="cnt-wdth-lmtd">Section with limited width content</h2>
-<p>Add the CSS class name <code>.cnt-wdth-lmtd</code> to a sectioning element <code>&lt;section class="cnt-wdth-lmtd"&gt;...&lt;section&gt;</code> inside the main content of your page. More guidance are provided in the Content and IA specification.</p>
-<section class="cnt-wdth-lmtd">
-	<h3>Section example with limited width content</h3>
-	<p>Different example text. Different example text. Different example text. Different example text. Different example text. Different example text. Different example text. Different example text.</p>
-</section>
 <section>
 <h2>Example 1</h2>
 <p>With session storage to remember last tab viewed. (Default behaviour)</p>
 <div class="wb-tabs">
-<div class="tabpanels">
-<details id="details-panel1">
-<summary>Example 1</summary>
-<p><h2>Large radio buttons target with explicit labels</h2>
+   <div class="tabpanels">
+       <details id="details-panel1" open="open">
+             <summary>Example 1</summary>
+<p>
+<h2>Large radio buttons target with explicit labels</h2>
 <fieldset class="gc-chckbxrdio">
 <legend>Which is your favorite pet?</legend>
 	<ul class="list-unstyled lst-spcd-2">
@@ -41,6 +36,7 @@ title: working example of a content page with tabbed interface
 	</ul>
 </fieldset>
 </p>
+</details>
 <details id="details-panel2" open="open">
 <summary>Example 2</summary>
 <p>
@@ -50,17 +46,11 @@ title: working example of a content page with tabbed interface
 </ul>
 </p>
 </details>
-<details id="details-panel3">
-<summary>Example 3</summary>		
-<p>
-It is needless, however, to prove that the Norsemen could have reached
-America in their ships. The voyages from Iceland to Greenland which we
-know they made continually for four hundred years were just as arduous
-as a further voyage from Greenland to the coast of Canada.
-</p>
-</details>
+	</div>
+
+	<p class="mrgn-tp-md"><a href="#details-panel3" class="wb-tabs-ext">Show the third panel</a></p>
 </div>
-</div>
+</section>	
 title: GCWeb Jekyll website example
 layout: default
 ---
